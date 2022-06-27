@@ -1,0 +1,7 @@
+#Chrome settings
+webdriver.driver=chrome
+webdriver.chrome.driver=drivers/chromedriver.exe
+chrome.switches=--start-maximized,--homepage=about:blank,--no-first-run
+#serenity.proxy.http="127.0.0.1:9999"
+#Tests run in headless chrome. comment out the below switch if you want the real chrome browser to open.
+#chrome.switches=--headless,--no-sandbox,--window-size=1920,1080
