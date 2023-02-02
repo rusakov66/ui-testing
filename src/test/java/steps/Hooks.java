@@ -1,16 +1,20 @@
 package steps;
 
-import driver_manager.DriverManager;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
-import net.serenitybdd.core.Serenity;
+import org.openqa.selenium.WebDriver;
 
 public class Hooks {
+    private WebDriver driver;
 
     @After
     public void teardown() {
-        System.out.println(" ------------- Сейчас закрывается: " + Serenity.sessionVariableCalled("savedBrowserName"));
-        DriverManager.closeSite();
+//        System.out.println(" ------------- Сейчас закрывается: " + Serenity.sessionVariableCalled("savedBrowserName"));
+//        DriverManager.closeSite();
+
+//        driver = Serenity.sessionVariableCalled("savedWebDriver");
+//        Serenity.setSessionVariable("savedBrowserName").to(null);
+//        driver = null;
     }
 
     @Before

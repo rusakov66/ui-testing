@@ -20,6 +20,7 @@ public class StepsDefinition {
 
     @Given("^I open site '(.*)' with '(.*)' browser$")
     public void search(String siteName, String browserName) {
+        System.out.println("3");
         if (Serenity.sessionVariableCalled("savedWebDriver") != null) {
             driver = Serenity.sessionVariableCalled("savedWebDriver");
             getDriver(browserName).get(siteName);
