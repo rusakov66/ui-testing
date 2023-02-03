@@ -2,6 +2,7 @@ package driver_manager;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 
 public class DriverManager {
     private static WebDriver driver;
@@ -11,9 +12,11 @@ public class DriverManager {
             case ("Chrome"):
                 driver = new ChromeDriver(WebDriverConfig.configChrome());
                 break;
-//            case ("Firefox"):
-//                driver = new FirefoxDriver(WebDriverConfig.configFirefox());
-//                break;
+            case ("Firefox"):
+                driver = new FirefoxDriver(WebDriverConfig.configFirefox());
+                break;
+            default:
+                throw new IllegalStateException("Unexpected value: " + browserName);
         }
     }
 

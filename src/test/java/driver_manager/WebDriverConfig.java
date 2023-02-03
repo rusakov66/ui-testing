@@ -15,8 +15,9 @@ public class WebDriverConfig {
         return options;
     }
     public static FirefoxOptions configFirefox() {
-        WebDriverManager.firefoxdriver().setup();
-        FirefoxOptions options = new FirefoxOptions();
+        System.setProperty("webdriver.gecko.driver", "C:\\DRIVERS\\geckodriver-v0.32.1\\geckodriver.exe");
+        FirefoxOptions options = new FirefoxOptions()
+                .setBinary("C:\\Program Files\\Mozilla Firefox\\firefox.exe");
 
         return options;
     }

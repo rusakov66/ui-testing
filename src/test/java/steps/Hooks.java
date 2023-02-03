@@ -9,7 +9,7 @@ public class Hooks {
 
     @After
     public void teardown() {
-//        System.out.println(" ------------- Сейчас закрывается: " + Serenity.sessionVariableCalled("savedBrowserName"));
+//        System.out.println(" ------------- : " + Serenity.sessionVariableCalled("savedBrowserName"));
 //        DriverManager.closeSite();
 
 //        driver = Serenity.sessionVariableCalled("savedWebDriver");
@@ -20,7 +20,6 @@ public class Hooks {
     @Before
     public void beforeScenario() throws Exception {
 
-//    System.out.println(" ------------- Сейчас закрывается: " + Serenity.sessionVariableCalled("savedBrowserName") );
 //        DriverManager.closeSite();
     }
 

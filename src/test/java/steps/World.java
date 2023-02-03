@@ -1,9 +1,9 @@
 package steps;
 
-import org.springframework.stereotype.Component;
+//import org.springframework.stereotype.Component;
 import java.util.HashMap;
 
-@Component
+//@Component
 public class World {
 
     private final HashMap<Class, Object> scenarioResources = new HashMap<>();
